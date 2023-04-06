@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="main.css">
+    <title>Login</title>
+</head>
+<body>
+        <div class="container">
+        <form action="" class="form" id="login">
+            <h1><div class="form__title">Wealtech Login</div></h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email" input type="text" name="Name" id="name" placeholder="Enter your name" required/>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password" required/>
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Forget your password?</a>
+            </p>
+            <p class="form__text">
+                <!-- <id="linkCreateAccount" href="./" class="form__link">Don't have an account? Create an account</a> -->
+                <a href="create.html">Don't have an account? Create an account</a>
+                <br> 
+                <br><a href="index.html">Back to Homepage</a>
+            </p>
+            
+           
+        </form>
+
+        
+        <script>
+            let form=document.getElementsByTagName("form")[0];
+            form.addEventListener("submit", (e)=> {
+                e.preventDefault();
+                alert("Subscribed!");
+            });
+        </script>
+    
+</body>
+</html>

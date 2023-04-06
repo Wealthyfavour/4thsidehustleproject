@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="wealtech logo.jpg" alt="logo" width="150">
+        </div>
+        <!-- toggle menu -->
+        <span style="cursor: pointer;" class="menubtn" onclick="openNav()">&#9776;</span>
+
+        <div class="navlinks">
+            <ul>
+            <li><a href="contact.html">Home</a></li>
+            <li><a href="contact.html">About</a></li>
+            <li><a href="contact.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <button type="button">Login</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- responsive side nav bar -->
+    <div class="sideNav" id="sideNav"> 
+        <a href="#" class="clodeBtn" onclick="closeNav()"> &#10006;</a>
+        <a href="contact.html">Home</a>
+        <a href="contact.html">About</a>
+        <a href="contact.html">Services</a>
+        <a href="contact.html">Contacts</a>
+        <a href="login.html"><button type="buttton">Login</button></a>
+    </div>
+
+    <!-- Header content with banner image -->
+    <div class="row">
+        <div class="column1">
+        <h1>Web Development</h1>
+        <p>Contact us for exclusive web development to grow your business!</p>
+        <button>PURCHASE</button>
+    </div>
+    <div class="column2">
+        <img src="web-png-image.jpg" alt="banner"
+        width="550px">
+    </div>
+    
+    <!-- javascript to make side menu appear -->
+    <script>
+        function openNav() {
+            document.getElementById("sideNav").style.width
+            = "50%";
+        }
+        function closeNav() {
+            document.getElementById("sideNav").style.width
+            = "0%";
+        }
+    </script>
+
+</body>
+</html>
